@@ -24,9 +24,10 @@ Create a style.scss file and import the CodyFrame files:
   @use 'util'; // ← utility classes
 ````
 The _config.scss file is used to customize the framework (i.e., to edit the [breakpoints](https://codyhouse.co/ds/docs/framework/breakpoints) or to modify the [spacing scale](https://codyhouse.co/ds/docs/framework/spacing)).
+<details>
 
-Here's a list of all possible configurations:
-````
+<summary> Here's a list of all possible configurations: </summary>
+````python
     @use 'config' as * with (
     $util-prefix: '',
     $breakpoints: (
@@ -278,8 +279,9 @@ Here's a list of all possible configurations:
     )
   );
 ````
+</details>
 If you prefer working with CSS (without a preprocessor)
-````
+````python
   @import 'https://unpkg.com/codyframe/main/css/reset.css'; /* ← reset */
   
   /* ↓ copy these templates from Github & modify them locally */
@@ -297,7 +299,7 @@ If you prefer working with CSS (without a preprocessor)
 ````
 # Node module
 To install CodyFrame as node module:
-````bash
+````python
   # using npm
   npm i codyframe
   
@@ -306,7 +308,7 @@ To install CodyFrame as node module:
 ````
 If you install CodyFrame as node module, import the reset, config, and util modules from the node package...
 
-````
+````python
   @use '../../../node_modules/codyframe/main/scss/reset';
   @use '../../../node_modules/codyframe/main/scss/config' as *;
   
@@ -326,7 +328,7 @@ If you install CodyFrame as node module, import the reset, config, and util modu
 ...and update the link to the config module in each SCSS file.
 
 Example 1: update the the @use rule in the buttons.scss file:
-````
+````python
   
   @use '../../../node_modules/codyframe/main/scss/config' as *;
   // --- ↑ update this path according to your content structure
@@ -339,7 +341,7 @@ Example 1: update the the @use rule in the buttons.scss file:
 ````
   Example 2: update the @use rule in each component SCSS file:
   
-````
+````python
     @use '../../../node_modules/codyframe/main/scss/config' as *;
   
   /* ----↑ */
