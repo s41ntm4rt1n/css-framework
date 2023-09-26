@@ -27,6 +27,7 @@ The _config.scss file is used to customize the framework (i.e., to edit the [bre
 <details>
 
 <summary> Here's a list of all possible configurations: </summary>
+
 ````python
     @use 'config' as * with (
     $util-prefix: '',
