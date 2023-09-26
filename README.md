@@ -6,7 +6,7 @@ You can read more about the framework [here](https://codyhouse.co/ds/docs/framew
 # Quick start
 Create a style.scss file and import the CodyFrame files:
 
-````
+````python
   @use 'reset'; // ← reset
   @use 'config' as *; // ← customize the framework
   
