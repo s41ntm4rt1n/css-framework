@@ -281,6 +281,7 @@ The _config.scss file is used to customize the framework (i.e., to edit the [bre
   );
 ````
 </details>
+
 If you prefer working with CSS (without a preprocessor)
 ````python
   @import 'https://unpkg.com/codyframe/main/css/reset.css'; /* ← reset */
